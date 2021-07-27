@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+ENTITY MUX8 IS
+	PORT(I0, I1, I2, I3, I4, I5, I6, I7: in STD_LOGIC;
+		S: in STD_LOGIC_VECTOR(2 downto 0);
+		O: out STD_LOGIC);
+END MUX8;
+
+ARCHITECTURE CKT OF MUX8 IS
+
+BEGIN
+
+	O <= (I0 AND NOT S(2) AND NOT S(1) AND NOT S(0)) 
+	OR (I1 AND NOT S(2) AND NOT S(1) AND S(0)) 
+	OR (I2 AND NOT S(2) AND S(1) AND NOT S(0))
+	OR (I3 AND NOT S(2) AND S(1) AND S(0)) 
+	OR (I4 AND S(2) AND NOT S(1) AND NOT S(0)) 
+	OR (I5 AND S(2) AND NOT S(1) AND S(0))
+	OR (I6 AND S(2) AND S(1) AND NOT S(0)) 
+	OR (I7 AND S(2) AND S(1) AND S(0));
+
+END CKT;

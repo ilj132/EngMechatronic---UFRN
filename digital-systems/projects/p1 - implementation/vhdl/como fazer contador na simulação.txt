@@ -1,0 +1,5 @@
+
+force addr(0) 0 0, 1 1 -repeat 2
+force addr(1) 0 0, 1 2 -repeat 4
+force addr(2) 0 0, 1 4 -repeat 8
+force addr(3) 0 0, 1 8 -repeat 10
