@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1603134832 source:/home/isaac-lyra/Documents/estudos/programming/advanced-programming/projects/my-projects/labirinto/labirinto_main.cpp
+	<iostream>
+	<cmath>
+	<chrono>
+	"labirinto.h"
+
+1603133296 /home/isaac-lyra/Documents/estudos/programming/advanced-programming/projects/my-projects/labirinto/labirinto.h
+	<vector>
+
+1603137987 source:/home/isaac-lyra/Documents/estudos/programming/advanced-programming/projects/my-projects/labirinto/labirinto.cpp
+	<iostream>
+	<iomanip>
+	<fstream>
+	<cstdlib>
+	<string>
+	<time.h>
+	<cmath>
+	<list>
+	<algorithm>
+	"labirinto.h"
+

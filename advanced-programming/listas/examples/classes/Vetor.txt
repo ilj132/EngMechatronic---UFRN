@@ -1,0 +1,1 @@
+Crie uma classe (Vetor) para representar vetores algébricos de qualquer dimensão (com alocação dinâmica de memória). Preveja as funcionalidades usuais para essa classe, incluindo os construtores e destrutores necessários, as funções de consulta (à dimensão, aos elementos), métodos de entrada e saída e as operações algébricas básicas (soma, produto escalar, etc.)

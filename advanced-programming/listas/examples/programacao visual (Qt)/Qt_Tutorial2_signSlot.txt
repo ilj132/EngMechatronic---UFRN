@@ -1,0 +1,43 @@
+1) Usando o QtCreator, crie um novo projeto (signSlot), tendo como classe base um QWidget:
+   Application > Qt Widgets Application
+   Class name: MainWindow
+   Base class: QWidget
+
+2) Utilizando o designer do Qt Creator, acrescente à janela:
+- Uma barra de progresso (Progress Bar) embaixo
+- Um deslizador horizontal (Horizontal Slider) em cima
+
+3) Alinhe os objetos verticalmente
+
+4) Altere as propriedades dos objetos para que ambos tenham:
+- Valor mínimo 0
+- Valor máximo 100
+- Valor inicial 50
+
+5) Execute o aplicativo
+
+6) Faça a conexão entre o sinal do deslizador com o slot da barra de progresso,
+   acrescentando ao construtor da classe MainWindow:
+
+==========================
+connect(ui->horizontalSlider, SIGNAL (valueChanged(int)),
+        ui->progressBar, SLOT (setValue(int)));
+==========================
+
+7) Execute o aplicativo
+
+8) Elimine a conexão introduzida manualmente entre o sinal do deslizador e o slot da barra de progresso.
+
+9) Com o Qt Creator:
+- Selecione o deslizador
+- Clique com o botão direito do mouse
+- Escolha a opção "Go to slot..."
+- Escolha o sinal "valueChanged(int)"
+
+10) Foi criada automaticamente a função "on_horizontalSlider_valueChanged". Altere seu codigo para:
+
+==========================
+ui->progressBar->setValue(value);
+==========================
+
+11) Execute o aplicativo

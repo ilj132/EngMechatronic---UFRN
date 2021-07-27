@@ -1,0 +1,31 @@
+COMENTÁRIOS ISAAC
+
+NOTA INICIAL: 9,95
+DESCONTOS:
+-1,5x1=1,5 (1 erro grave)
+-0,2x3=0,6 (3 erros menores)
+
+NOTA FINAL: 7,85
+
+
+ERROS GRAVES:
+
+- O seu construtor default:
+  inline Poly(): grau(0), x(NULL) {}
+cria um polinômio de grau 0, que deveria ter um coeficiente. Portanto, x não pode ser NULL. Você deveria, como está dito na especificação, armazenar internamente a dimensão (nº de coeficientes) e não o grau (um polinômio vazio, de DIMENSÃO 0, é diferente de um polinômio de GRAU 0, que tem 1 coeficiente). Nesse caso, o seu construtor default poderia criar um polinômio com dimensão 0, ou seja, vazio.
+Aparece o mesmo erro, por exemplo, na função clean:
+void Poly::clean()
+{
+  if (x != NULL) delete[] x;
+  x = NULL;
+  grau = 0;   <--- ERRO se x==NULL
+}
+Em todas as outras funções (por exemplo, getValor), quando tiver um polinômio de grau 0 que na realidade for um polinômio de dimensão 0 (x=NULL), você vai acessar o coeficiente x[0] e isso pode gerar um acesso indevido de memória e travar seu programa!
+
+OUTROS ERROS:
+
+- A função getGrau() deve retornar um inteiro, não um unsigned. Para polinômios vazios (dimensão = 0) deve retornar um número negativo, conforme a especificação.
+
+- Na função setGrau, vc apaga o conteúdo de *this e retorna um novo Poly com o grau desejado, quando na realidade você deveria alterar o grau de *this e não retornar nada, como determina a especificação.
+
+- Nas funções operator+ e operator-, você não trata a possibilidade de gerar um polinômio com o coeficiente de maior grau nulo, o que não é permitido.

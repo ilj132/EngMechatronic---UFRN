@@ -1,0 +1,1 @@
+Repository of the project created in the curricular component ECT2203 - Programming Logic of the undergraduate course in Science and Technology at the Federal University of Rio Grande do Norte, in 2018.1

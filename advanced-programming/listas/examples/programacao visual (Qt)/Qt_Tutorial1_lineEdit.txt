@@ -1,0 +1,97 @@
+0) Baixe e instale o Qt Open source:
+  - http://www.qt.io/
+  - http://www.qt.io/downloadopensource/
+
+CRIANDO UM NOVO PROJETO
+
+1) Crie um novo projeto:
+  - Lance o Qt Creator
+  - New Project
+  - Project: Application, Qt Widgets Application (usa os widgets, elementos visuais)
+
+2) Escolha um nome e uma pasta de armazenamento para o projeto:
+  - lineEdit (ou qualquer outro)
+
+3) Escolha o programa gerenciados do projeto (normalmente, qmake) - Só em algumas versões do Qt.
+
+4) Escolha a classe base que vai servir de modelo para o elemento gráfico (widget) principal da sua aplicação e o nome da classe derivada que será criada para representar esse widget:
+  - Escolha QWidget
+  - Coloque MeuWidget (ou qualquer outro) como o nome de sua classe
+
+5) Caso você fosse programar versões do seu projeto em várias línguas, você poderia adicionar arquivos de tradução dos textos do programa. Escolha nenhuma língua (none) - Só em algumas versões do Qt.
+
+6) Caso você tenha instalado mais de uma opção do Qt, escolha um kit (plataforma/versão Qt/compilador) para compilar o seu código.
+- A quantidade de kits disponíveis depende de quantas opções você escolheu instalar ao baixar o Qt. Geralmente, apenas o kit Desktop/<Última versão Qt>/MinGw está disponível.
+
+7) Conclua a criação do projeto. Isso deve criar os arquivos:
+  - main.cpp
+  - meuwidget.h
+  - meuwidget.cpp
+  - meuwidget.ui
+
+EDITANDO O PROJETO
+
+8) Edite o arquivo meuwidget.ui
+  - Clique no arquivo, o que deve abrir o modo de design
+
+9) Acrescente um widget Label:
+  - Selecione e arraste para dentro do widget
+
+10) Acrescente um widget LineEdit
+  - Posicione-o aproximadamente à direita do Label. A posição exata não é importante.
+
+11) Selecione o widget principal, o que desseleciona os outros widgets:
+  - Clique na imagem de fundo do widget principal
+
+12) Alinhe os dois widgets horizontalmente:
+  - Na barra de ferramentas principal, escolha "Lay out Horizontally" ou digite Ctrl-H
+
+13) Altere o texto do Label para "Meu nome":
+  - Dê um duplo clique ou altere o valor da propriedade "text" no canto inferior direito
+
+14) Salve o arquivo de design ou o projeto inteiro:
+  - Digite Ctrl-S ou File->Save "meuwidget.ui" ou digite Ctrl-Shift-S ou File->Save All
+
+15) Compile e execute o programa.
+
+16) Escolha editar o arquivo "meuwidget.h"
+  - Selecione a aba Edit (barra esquerda do ambiente) e o arquivo Header desejado
+
+17) Acrescente a declaração de duas novas funções-membro públicas à classe MeuWidget:
+  - void setName(const QString &name);
+  - QString name() const;
+
+18) Acrescente a definição das duas novas funções-membro no arquivo "meuwidget.cpp":
+  void Widget::setName(const QString &name)
+  {
+    ui->lineEdit->setText(name);
+  }
+
+  QString Widget::name() const
+  {
+    return ui->lineEdit->text();
+  }
+
+  - Observação: o Qt Creator pode gerar automaticamente o cabeçalho da definição das funções. Clique na declaração das funções (no arquivo .h) com o botão direito e escolha Refactor -> Add definition in meuwidget.cpp)
+
+19) Edite "main.cpp" para acrescentar uma chamada à função "setName" antes de exibir (chamar a função "show") o seu widget principal:
+
+  int main(int argc, char *argv[])
+  {
+    QApplication a(argc, argv);
+    Widget w;
+
+    w.setName("Adelardo Medeiros");
+
+    w.show();
+
+    return a.exec();
+}
+
+20) Construa (compile e linke) o aplicativo:
+  - Clique no martelo no canto inferior esquerdo
+
+21) Execute o programa:
+  - Clique no "Play" (seta verde) no canto inferior esquerdo
+
+
