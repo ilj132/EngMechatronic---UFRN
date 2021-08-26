@@ -347,14 +347,14 @@ int main(void)
 			{
 				t = 0;
 			}
-			// 			if(flag_AM || flag_FM)
-			// 			{
-			// 				val_decimal(&PORTB, output);
-			// 			}
-			// 			else if(flag_ASK || flag_FSK)
-			// 			{
-			// 				val_binario(&PORTB, output);
-			// 			}
+			 			if(flag_AM || flag_FM)
+			 			{
+			 				val_decimal(&PORTB, output);
+			 			}
+			 			else if(flag_ASK || flag_FSK)
+			 			{
+			 				val_binario(&PORTB, output);
+			 			}
 
 		} // FIM DA MODULAÇÃO
 	} // END WHILE (1)
