@@ -1,0 +1,7 @@
+/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/CMakeFiles/edit_cache.dir
+/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/CMakeFiles/runArrayQueueTest.dir
+/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/CMakeFiles/runLinkedStackTest.dir
+/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/CMakeFiles/runDoublyLinkedListTest.dir
+/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/CMakeFiles/rebuild_cache.dir
+/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/CMakeFiles/runLinkedListTest.dir
+/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/CMakeFiles/runArrayListTest.dir
