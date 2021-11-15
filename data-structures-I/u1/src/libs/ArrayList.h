@@ -23,12 +23,6 @@ int obterElementoEmPosicao(struct arraylist* lista, int posicao) {
 }
 
 void duplicarCapacidade(struct arraylist* lista) {
-    // int novaLista[2 * sizeof(lista) * sizeof(int)];
-    // for (int i = 0; i < sizeof(lista); i++) {
-    //     novaLista[i] = lista->vetor[i];
-    // }
-    // free(lista->vetor);
-    // lista->vetor = novaLista;
     lista -> vetor = (int*)realloc(lista -> vetor, 2 * lista->capacidade * sizeof(int));
     lista -> capacidade = 2 * lista-> capacidade;
 }
