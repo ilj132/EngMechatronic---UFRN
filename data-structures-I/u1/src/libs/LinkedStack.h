@@ -1,3 +1,5 @@
+// Author: Isaac de Lyra Junior
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -55,7 +57,7 @@ void empilhar(struct linkedstack** pilha, int valor){
 
 //decrementar qtdade se a pilha não estiver nula ou vazia
 void desempilhar(struct linkedstack* pilha) {
-    if(pilha != NULL && pilha->topo != NULL){ // se pilha não nula e não vazia
+    if(!vazia(pilha)){ // se pilha não nula e não vazia
         struct no* aux = pilha->topo; // guarda endereço do topo da pilha atual
         pilha->topo = pilha->topo->prox; // o topo da pilha agora será o próximo
         free(aux); // desaloca memoria do topo da pilha antigo
@@ -65,7 +67,7 @@ void desempilhar(struct linkedstack* pilha) {
 
 //retorne a constante INT_MIN se a pilha for nula ou vazia
 int desempilharRetornando(struct linkedstack* pilha) {
-    if(pilha != NULL && pilha->topo != NULL){
+    if(!vazia(pilha)){
         struct no* aux2 = pilha->topo; // guarda endereço do topo da pilha atual
         int aux = aux2->val; // guarda o valor do topo atual
         pilha->topo = pilha->topo->prox; // o novo topo será o próximo da pilha
@@ -78,7 +80,7 @@ int desempilharRetornando(struct linkedstack* pilha) {
 
 //retorne a constante INT_MIN se a pilha for nula ou vazia
 int topo(struct linkedstack* pilha){
-    if(pilha!=NULL && pilha->topo != NULL) // se pilha não nula e também não vazia
+    if(!vazia(pilha)) // se pilha não nula e também não vazia
        return pilha->topo->val; // retorna o valor
     return INT_MIN; // se nao, retorna INT_MIN;
 }

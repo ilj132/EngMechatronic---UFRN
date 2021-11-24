@@ -1,3 +1,5 @@
+// Author: Isaac de Lyra Junior
+
 #include <stdio.h>
 #include <stdlib.h>
 
