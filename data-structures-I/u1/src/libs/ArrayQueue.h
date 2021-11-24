@@ -12,14 +12,26 @@ struct arrayqueue {
 };
 
 struct arrayqueue* inicializar(int tamArray) {
-    //TODO
+    struct arrayqueue* queue = (struct arrayqueue*)malloc(sizeof(struct arrayqueue));
+    queue->frente = -1;
+    queue->tras = queue->frente;
+    queue->elementos = (int*)calloc(queue->tamanho, sizeof(int));
+    queue->tamanho = tamArray;
+    queue->qtdade = 0;
+    return queue;
 }
 
 //se a fila estiver nula, instancie a fila com tamanho 10
 //por causa da possibilidade de instanciacao usamos struct arrayqueue**
 //se a fila encher, simplesmente n�o enfileire
 void enfileirar(struct arrayqueue** fila, int val) {
-    //TODO
+    if((*fila)==NULL){
+        (*fila) = inicializar(10);
+        enfileirar(fila, val);
+    }
+    else{
+
+    }
 }
 
 //retorne a constante INT_MIN se a fila for nula ou vazia

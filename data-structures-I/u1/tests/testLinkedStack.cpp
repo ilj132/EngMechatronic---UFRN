@@ -6,7 +6,7 @@
 
 #include "../src/libs/LinkedStack.h"
 
-class LinkedListStackTest : public ::testing::Test {
+class LinkedListStackTest2 : public ::testing::Test {
 protected:
 	virtual void TearDown() {
 		while (topo(pilha) != INT_MIN)
@@ -25,7 +25,7 @@ protected:
 	struct linkedstack* pilha;
 };
 
-TEST_F(LinkedListStackTest, EmpilhamentoPilhaNula) {
+TEST_F(LinkedListStackTest2, EmpilhamentoPilhaNula) {
 	TearDown();
 
 	int numQualquer = 123456;
@@ -34,14 +34,14 @@ TEST_F(LinkedListStackTest, EmpilhamentoPilhaNula) {
 	EXPECT_EQ(topo(pilha), numQualquer);
 }
 
-TEST_F(LinkedListStackTest, EmpilhamentoPilhaVazia) {
+TEST_F(LinkedListStackTest2, EmpilhamentoPilhaVazia) {
 	int numQualquer = 123456;
 	empilhar(&pilha, numQualquer);
 	EXPECT_EQ(pilha->qtdade, 1);
 	EXPECT_EQ(topo(pilha), numQualquer);
 }
 
-TEST_F(LinkedListStackTest, EmpilhamentoPilhaNaoVazia) {
+TEST_F(LinkedListStackTest2, EmpilhamentoPilhaNaoVazia) {
 	int numQualquer = 123456;
 	empilhar(&pilha, numQualquer);
 	EXPECT_EQ(topo(pilha), numQualquer);
@@ -53,19 +53,19 @@ TEST_F(LinkedListStackTest, EmpilhamentoPilhaNaoVazia) {
 	EXPECT_EQ(topo(pilha), outroNumQualquer);
 }
 
-TEST_F(LinkedListStackTest, DesempilhamentoPilhaNula) {
+TEST_F(LinkedListStackTest2, DesempilhamentoPilhaNula) {
 	TearDown();
 
 	EXPECT_EQ(desempilharRetornando(pilha), INT_MIN);
 }
 
-TEST_F(LinkedListStackTest, DesempilhamentoPilhaVazia) {
+TEST_F(LinkedListStackTest2, DesempilhamentoPilhaVazia) {
 	desempilhar(pilha);
 	EXPECT_EQ(pilha->qtdade, 0);
 	EXPECT_EQ(desempilharRetornando(pilha), INT_MIN);
 }
 
-TEST_F(LinkedListStackTest, DesempilhamentoPilhaNaoVazia) {
+TEST_F(LinkedListStackTest2, DesempilhamentoPilhaNaoVazia) {
 	int numQualquer = 123456;
 	empilhar(&pilha, numQualquer);
 	int outroNumQualquer = 7890;
@@ -75,17 +75,17 @@ TEST_F(LinkedListStackTest, DesempilhamentoPilhaNaoVazia) {
 	EXPECT_EQ(desempilharRetornando(pilha), numQualquer);
 }
 
-TEST_F(LinkedListStackTest, TopoPilhaNula) {
+TEST_F(LinkedListStackTest2, TopoPilhaNula) {
 	TearDown();
 
 	EXPECT_EQ(topo(pilha), INT_MIN);
 }
 
-TEST_F(LinkedListStackTest, TopoPilhaVazia) {
+TEST_F(LinkedListStackTest2, TopoPilhaVazia) {
 	EXPECT_EQ(topo(pilha), INT_MIN);
 }
 
-TEST_F(LinkedListStackTest, TopoPilhaNaoVazia) {
+TEST_F(LinkedListStackTest2, TopoPilhaNaoVazia) {
 	int numQualquer = 123456;
 	empilhar(&pilha, numQualquer);
 	EXPECT_EQ(topo(pilha), numQualquer);
@@ -94,17 +94,17 @@ TEST_F(LinkedListStackTest, TopoPilhaNaoVazia) {
 	EXPECT_EQ(topo(pilha), outroNumQualquer);
 }
 
-TEST_F(LinkedListStackTest, FuncVazioPilhaNula) {
+TEST_F(LinkedListStackTest2, FuncVazioPilhaNula) {
 	TearDown();
 
 	EXPECT_TRUE(vazia(pilha));
 }
 
-TEST_F(LinkedListStackTest, FuncVazioPilhaVazia) {
+TEST_F(LinkedListStackTest2, FuncVazioPilhaVazia) {
 	EXPECT_TRUE(vazia(pilha));
 }
 
-TEST_F(LinkedListStackTest, FuncVazioPilhaNaoVazia) {
+TEST_F(LinkedListStackTest2, FuncVazioPilhaNaoVazia) {
 	int numQualquer = 123456;
 	empilhar(&pilha, numQualquer);
 	EXPECT_FALSE(vazia(pilha));
