@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/runTestU1.dir/all
 all: CMakeFiles/runArrayQueueTest.dir/all
 all: CMakeFiles/runLinkedStackTest.dir/all
 all: CMakeFiles/runDoublyLinkedListTest.dir/all
@@ -67,6 +68,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/runTestU1.dir/clean
 clean: CMakeFiles/runArrayQueueTest.dir/clean
 clean: CMakeFiles/runLinkedStackTest.dir/clean
 clean: CMakeFiles/runDoublyLinkedListTest.dir/clean
@@ -74,6 +76,33 @@ clean: CMakeFiles/runLinkedListTest.dir/clean
 clean: CMakeFiles/runArrayListTest.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/runTestU1.dir
+
+# All Build rule for target.
+CMakeFiles/runTestU1.dir/all:
+	$(MAKE) -f CMakeFiles/runTestU1.dir/build.make CMakeFiles/runTestU1.dir/depend
+	$(MAKE) -f CMakeFiles/runTestU1.dir/build.make CMakeFiles/runTestU1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/CMakeFiles --progress-num=11,12 "Built target runTestU1"
+.PHONY : CMakeFiles/runTestU1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/runTestU1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/runTestU1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/CMakeFiles 0
+.PHONY : CMakeFiles/runTestU1.dir/rule
+
+# Convenience name for target.
+runTestU1: CMakeFiles/runTestU1.dir/rule
+
+.PHONY : runTestU1
+
+# clean rule for target.
+CMakeFiles/runTestU1.dir/clean:
+	$(MAKE) -f CMakeFiles/runTestU1.dir/build.make CMakeFiles/runTestU1.dir/clean
+.PHONY : CMakeFiles/runTestU1.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/runArrayQueueTest.dir

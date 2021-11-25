@@ -22,3 +22,6 @@ target_link_libraries(runLinkedStackTest ${GTEST_LIBRARIES} pthread)
 
 add_executable(runArrayQueueTest testArrayQueue.cpp)
 target_link_libraries(runArrayQueueTest ${GTEST_LIBRARIES} pthread)
+
+add_executable(runTestU1 testU1.cpp)
+target_link_libraries(runTestU1 ${GTEST_LIBRARIES} pthread)

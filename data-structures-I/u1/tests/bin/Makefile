@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named runTestU1
+
+# Build rule for target.
+runTestU1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 runTestU1
+.PHONY : runTestU1
+
+# fast build rule for target.
+runTestU1/fast:
+	$(MAKE) -f CMakeFiles/runTestU1.dir/build.make CMakeFiles/runTestU1.dir/build
+.PHONY : runTestU1/fast
+
+#=============================================================================
 # Target rules for targets named runArrayQueueTest
 
 # Build rule for target.
@@ -310,6 +323,33 @@ testLinkedStack.cpp.s:
 	$(MAKE) -f CMakeFiles/runLinkedStackTest.dir/build.make CMakeFiles/runLinkedStackTest.dir/testLinkedStack.cpp.s
 .PHONY : testLinkedStack.cpp.s
 
+testU1.o: testU1.cpp.o
+
+.PHONY : testU1.o
+
+# target to build an object file
+testU1.cpp.o:
+	$(MAKE) -f CMakeFiles/runTestU1.dir/build.make CMakeFiles/runTestU1.dir/testU1.cpp.o
+.PHONY : testU1.cpp.o
+
+testU1.i: testU1.cpp.i
+
+.PHONY : testU1.i
+
+# target to preprocess a source file
+testU1.cpp.i:
+	$(MAKE) -f CMakeFiles/runTestU1.dir/build.make CMakeFiles/runTestU1.dir/testU1.cpp.i
+.PHONY : testU1.cpp.i
+
+testU1.s: testU1.cpp.s
+
+.PHONY : testU1.s
+
+# target to generate assembly for a file
+testU1.cpp.s:
+	$(MAKE) -f CMakeFiles/runTestU1.dir/build.make CMakeFiles/runTestU1.dir/testU1.cpp.s
+.PHONY : testU1.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -317,6 +357,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... runTestU1"
 	@echo "... runArrayQueueTest"
 	@echo "... runLinkedStackTest"
 	@echo "... runDoublyLinkedListTest"
@@ -338,6 +379,9 @@ help:
 	@echo "... testLinkedStack.o"
 	@echo "... testLinkedStack.i"
 	@echo "... testLinkedStack.s"
+	@echo "... testU1.o"
+	@echo "... testU1.i"
+	@echo "... testU1.s"
 .PHONY : help
 
 
