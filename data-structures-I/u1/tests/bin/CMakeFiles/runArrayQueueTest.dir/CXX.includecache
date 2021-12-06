@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/isaac-lyra/studies/university/2021.2/aed/u1/src/libs/ArrayQueue.h
+/home/isaac-lyra/UFRN/data-structures-I/u1/src/libs/ArrayQueue.h
 stdio.h
 -
 stdlib.h
@@ -16,9 +16,9 @@ stdbool.h
 limits.h
 -
 
-/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/testArrayQueue.cpp
+/home/isaac-lyra/UFRN/data-structures-I/u1/tests/testArrayQueue.cpp
 gtest/gtest.h
 -
 ../src/libs/ArrayQueue.h
-/home/isaac-lyra/studies/university/2021.2/aed/u1/src/libs/ArrayQueue.h
+/home/isaac-lyra/UFRN/data-structures-I/u1/src/libs/ArrayQueue.h
 

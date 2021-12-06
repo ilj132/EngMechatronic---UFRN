@@ -1,4 +1,4 @@
-# Install script for directory: /home/isaac-lyra/studies/university/2021.2/aed/u1/tests
+# Install script for directory: /home/isaac-lyra/UFRN/data-structures-I/u1/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/bin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/isaac-lyra/UFRN/data-structures-I/u1/tests/bin/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

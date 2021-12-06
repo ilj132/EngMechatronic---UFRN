@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/runDoublyLinkedListTest.dir/testDoublyLinkedList.cpp.o  -o runDoublyLinkedListTest  /usr/local/lib/libgtest.a -lpthread 
+/usr/bin/c++    -rdynamic CMakeFiles/runDoublyLinkedListTest.dir/testDoublyLinkedList.cpp.o  -o runDoublyLinkedListTest  -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

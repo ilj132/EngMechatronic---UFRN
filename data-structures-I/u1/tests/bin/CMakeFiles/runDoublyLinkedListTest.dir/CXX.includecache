@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/isaac-lyra/studies/university/2021.2/aed/u1/src/libs/DoublyLinkedList.h
+/home/isaac-lyra/UFRN/data-structures-I/u1/src/libs/DoublyLinkedList.h
 stdlib.h
 -
 stdio.h
 -
 
-/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/testDoublyLinkedList.cpp
+/home/isaac-lyra/UFRN/data-structures-I/u1/tests/testDoublyLinkedList.cpp
 gtest/gtest.h
 -
 ../src/libs/DoublyLinkedList.h
-/home/isaac-lyra/studies/university/2021.2/aed/u1/src/libs/DoublyLinkedList.h
+/home/isaac-lyra/UFRN/data-structures-I/u1/src/libs/DoublyLinkedList.h
 math.h
 -
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/isaac-lyra/studies/university/2021.2/aed/u1/src/libs/prova/testU1.h
+/home/isaac-lyra/UFRN/data-structures-I/u1/src/libs/prova/testU1.h
 stdlib.h
 -
 stdio.h
@@ -16,9 +16,9 @@ stdbool.h
 stack
 -
 
-/home/isaac-lyra/studies/university/2021.2/aed/u1/tests/testU1.cpp
+/home/isaac-lyra/UFRN/data-structures-I/u1/tests/testU1.cpp
 gtest/gtest.h
 -
 ../src/libs/prova/testU1.h
-/home/isaac-lyra/studies/university/2021.2/aed/u1/src/libs/prova/testU1.h
+/home/isaac-lyra/UFRN/data-structures-I/u1/src/libs/prova/testU1.h
 
