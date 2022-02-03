@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/isaac-lyra/UFRN/data-structures-I/u3/src/BST.h
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+
+/home/isaac-lyra/UFRN/data-structures-I/u3/tests/testBST.cpp
+gtest/gtest.h
+-
+../src/BST.h
+/home/isaac-lyra/UFRN/data-structures-I/u3/src/BST.h
+math.h
+-
+
