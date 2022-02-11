@@ -1,0 +1,8 @@
+vsim somador3bits
+
+add wave *
+
+force A 011 0, 100 10, 100 20, 111 30
+force B 001 0, 011 10, 100 20, 111 30
+
+run 60
