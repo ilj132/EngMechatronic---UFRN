@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/runAVLTest.dir/testAVL.cpp.o  -o runAVLTest  -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

@@ -10,3 +10,6 @@ include_directories(${GTEST_INCLUDE_DIRS})
 
 add_executable(runBSTTest testBST.cpp)
 target_link_libraries(runBSTTest ${GTEST_LIBRARIES} pthread)
+
+add_executable(runAVLTest testAVL.cpp)
+target_link_libraries(runAVLTest ${GTEST_LIBRARIES} pthread)

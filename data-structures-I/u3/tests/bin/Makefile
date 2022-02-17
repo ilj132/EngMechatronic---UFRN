@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named runAVLTest
+
+# Build rule for target.
+runAVLTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 runAVLTest
+.PHONY : runAVLTest
+
+# fast build rule for target.
+runAVLTest/fast:
+	$(MAKE) -f CMakeFiles/runAVLTest.dir/build.make CMakeFiles/runAVLTest.dir/build
+.PHONY : runAVLTest/fast
+
+#=============================================================================
 # Target rules for targets named runBSTTest
 
 # Build rule for target.
@@ -122,6 +135,33 @@ runBSTTest: cmake_check_build_system
 runBSTTest/fast:
 	$(MAKE) -f CMakeFiles/runBSTTest.dir/build.make CMakeFiles/runBSTTest.dir/build
 .PHONY : runBSTTest/fast
+
+testAVL.o: testAVL.cpp.o
+
+.PHONY : testAVL.o
+
+# target to build an object file
+testAVL.cpp.o:
+	$(MAKE) -f CMakeFiles/runAVLTest.dir/build.make CMakeFiles/runAVLTest.dir/testAVL.cpp.o
+.PHONY : testAVL.cpp.o
+
+testAVL.i: testAVL.cpp.i
+
+.PHONY : testAVL.i
+
+# target to preprocess a source file
+testAVL.cpp.i:
+	$(MAKE) -f CMakeFiles/runAVLTest.dir/build.make CMakeFiles/runAVLTest.dir/testAVL.cpp.i
+.PHONY : testAVL.cpp.i
+
+testAVL.s: testAVL.cpp.s
+
+.PHONY : testAVL.s
+
+# target to generate assembly for a file
+testAVL.cpp.s:
+	$(MAKE) -f CMakeFiles/runAVLTest.dir/build.make CMakeFiles/runAVLTest.dir/testAVL.cpp.s
+.PHONY : testAVL.cpp.s
 
 testBST.o: testBST.cpp.o
 
@@ -158,7 +198,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... runAVLTest"
 	@echo "... runBSTTest"
+	@echo "... testAVL.o"
+	@echo "... testAVL.i"
+	@echo "... testAVL.s"
 	@echo "... testBST.o"
 	@echo "... testBST.i"
 	@echo "... testBST.s"

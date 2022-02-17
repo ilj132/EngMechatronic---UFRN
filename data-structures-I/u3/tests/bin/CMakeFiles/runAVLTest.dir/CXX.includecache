@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/isaac-lyra/UFRN/data-structures-I/u3/src/AVL.h
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+queue
+-
+
+/home/isaac-lyra/UFRN/data-structures-I/u3/tests/testAVL.cpp
+gtest/gtest.h
+-
+../src/AVL.h
+/home/isaac-lyra/UFRN/data-structures-I/u3/src/AVL.h
+math.h
+-
+stdlib.h
+-
+string.h
+-
+
