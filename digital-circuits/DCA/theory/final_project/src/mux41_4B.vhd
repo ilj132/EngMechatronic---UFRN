@@ -1,0 +1,17 @@
+ENTITY MUX41_4B IS
+    PORT(I0, I1, I2, I3: IN BIT_VECTOR(3 DOWNTO 0);
+        S: IN BIT_VECTOR(1 DOWNTO 0);
+        O: OUT BIT_VECTOR(3 DOWNTO 0));
+END MUX41_4B;
+
+ARCHITECTURE LOGIC OF MUX41_4B IS
+
+BEGIN
+
+    WITH S select
+        O<= I0 WHEN "00",
+            I1 WHEN "01",
+            I2 WHEN "10",
+            I3 WHEN "11";
+
+END LOGIC;

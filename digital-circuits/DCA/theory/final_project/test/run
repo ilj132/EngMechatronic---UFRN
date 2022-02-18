@@ -1,0 +1,13 @@
+vsim MDE_B
+
+add wave *
+
+force CLK 0 0, 1 1 -repeat 2
+force INSERTING 0 0, 1 4, 0 8, 1 12, 0 16
+force LT_16 1 0, 0 10
+force SELECT_I 0 0
+force GTEQ_VALUE 0 0
+force CANCEL 0 0
+force LT_16 1 0
+
+run 50
