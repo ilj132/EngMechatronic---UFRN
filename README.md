@@ -14,7 +14,7 @@ Lorem ipsum
 
 ### [Lógica de Programação]()
 
-<div style="width: 400px">
+<div style="width: 200px">
 
 ![Tela inicial do jogo](programming-logical-project/images/inicio.png)
 
