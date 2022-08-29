@@ -14,9 +14,7 @@ Lorem ipsum
 
 ### [Lógica de Programação]()
 
-
-![Tela inicial do jogo](programming-logical-project/images/inicio.png | width=200)
-
+<img src="programming-logical-project/images/inicio.png" width="300">
 
 O curso de Lógica de programação é responsável por dar o primeiro contato do discente de Engenharia de Computação a programação. Dentre os conceitos estudados estão: Componentes do computador, Algoritmos, Variáveis e Expressões, Estruturas condicionais, Estruturas de repetição, HTML e CSS, Vetores e Funções. Todos esses conceitos foram abordados utilizando a linguagem de programação Javascript. O repositório da disciplina armazena o projeto final, que trata-se de uma aplicação web de um jogo de nave, onde foi utilizado a biblioteca p5.js para ser implementado.
 
