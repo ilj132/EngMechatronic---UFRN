@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/runLinkedStackTest.dir/testLinkedStack.cpp.o  -o runLinkedStackTest  -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

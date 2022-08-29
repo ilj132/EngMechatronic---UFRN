@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/runArrayQueueTest.dir/testArrayQueue.cpp.o  -o runArrayQueueTest  -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 
