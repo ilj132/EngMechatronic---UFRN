@@ -13,21 +13,23 @@ Lorem ipsum
 ## Repositórios de cursos realizados
 
 ### [Lógica de Programação]()
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
-<div style="display: flex; align-items: flex-start; justify-content: flex-start;">
+<div style="width: 400px">
 
-AAAAAAAAAAAAAAaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+![Tela inicial do jogo](programming-logical-project/images/inicio.png)
 
 </div>
 
+O curso de Lógica de programação é responsável por dar o primeiro contato do discente de Engenharia de Computação a programação. Dentre os conceitos estudados estão: Componentes do computador, Algoritmos, Variáveis e Expressões, Estruturas condicionais, Estruturas de repetição, HTML e CSS, Vetores e Funções. Todos esses conceitos foram abordados utilizando a linguagem de programação Javascript. O repositório da disciplina armazena o projeto final, que trata-se de uma aplicação web de um jogo de nave, onde foi utilizado a biblioteca p5.js para ser implementado.
+
+
 ### [Linguagem de Programação]()
 ### [Programação Avançada]()
+### [Computação Numérica]()
 ### [Redes de Computadores]()
 ### [Circuitos Digitais]()
 ### [Sistemas Digitais](https://google.com)
 ### [Dispositivos de Hardware para Internet das Coisas]()
-### [Computação Numérica]()
 ### [Algoritmos e Estrutura de Dados I]()
 
 </div>
